@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: pink;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  color:blue;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>salchipapas</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Salchipapa#:~:text=The%20salchipapa%20was%20invented%20as,Colombian%20cuisine%20and%20Bolivian%20cuisine.">history</a></li>
+      <li><a href="https://wearecocina.com/recipes/salchipapas/">recipe</a></li>
+      <li><a href="https://dinnerbydennis.com/salchipapas/">country</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Where its from</h1>
+    <p> The salchipapa was invented as a street food in Lima, Peru. Over the years, it expanded to other places in Peru. In Latin America, the dish's popularity has expanded beyond Peruvian cuisine, and is now also typical of Colombian cuisine and Bolivian cuisine.
+ </p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
